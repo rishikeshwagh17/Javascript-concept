@@ -44,3 +44,35 @@ console.log(
   "return string from start index to index prev to last index ",
   sport.slice(0, 5)
 );
+
+const animals = ["ant", "bison", "camel", "duck", "elephant", "frog"];
+console.log("array of animals - ", animals);
+console.log(animals.slice(1, -1));
+console.log(animals.slice(-(animals.length + 1)));
+console.log(animals.slice()); //will return whole array as it is
+//all above method does not make changes to original array instead it returns new array
+
+//string quiz
+//what will be output
+console.log("PUP"[3]); //ans - undefined
+console.log("abcde fgh"[7]); //ans- g
+
+/*
+string escape character are 
+\' is we use single quote inside - ' ' we have to use \' to work
+\" is must be used inside - " " we have to use \" to work it
+\n is used to get new line
+and if we want to use \ inside string we have to use - \\ inside string
+like "my address is N-32\\R-2"
+*/
+
+/*
+    now we are going to discuss about template literals 
+    syntax - ` `
+    ex - ` i have ${5+5} RS`
+    to access variable inside it we have to use  ${} notation inside it
+    see below examples
+*/
+console.log(`i have ${5 + 5} RS`);
+const firstname = "rishi";
+console.log(`my name is ${firstname}`);
