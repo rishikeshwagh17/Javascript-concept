@@ -140,3 +140,17 @@ animals.splice(5, 2);
 //'at index 3, delete 2 items and replace them with "orca" and "grizzly"'
 animals.splice(3, 2, "orca", "grizzly");
 // ["shark", "octopus", "salmon", "orca", "grizzly"]
+
+//sort functionality
+let arr = [1, 1000, 34, 67, 21];
+//javascript is wierd incase of sorting array because they convert array element into string first then it sort them based on the UTF16 codes
+
+//it manipulates original array plus returns new array
+console.log(arr.sort());
+console.log(arr);
+
+//people usually use a compare function to sort array look for mdn web docs or blog in medium or free code camp
+
+//correct way is like
+let actualSort = arr.sort((a, b) => a - b);
+console.log(actualSort);
