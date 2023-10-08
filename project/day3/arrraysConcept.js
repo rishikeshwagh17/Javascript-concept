@@ -143,6 +143,7 @@ animals.splice(3, 2, "orca", "grizzly");
 
 //sort functionality
 let arr = [1, 1000, 34, 67, 21];
+
 //javascript is wierd incase of sorting array because they convert array element into string first then it sort them based on the UTF16 codes
 
 //it manipulates original array plus returns new array
