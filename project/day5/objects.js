@@ -57,3 +57,45 @@ const song = {
 
 console.log("song of ed sheeran - ", song["ed sheeran"]);
 console.log("song of Travis Scott - ", song["Travis Scott"]);
+
+//what is we want to add new properties and update properties
+//here is the way to do it
+const games = {
+  india: "cricket",
+  england: "football",
+  africa: "cricket",
+  wales: "golf",
+  USA: "basketBall",
+};
+
+games.japan = "taikwando";
+games.china = "karate";
+
+console.log("new games object - ", games);
+
+// always keep in mind when working with array and objects that they are reference types
+/*
+ just for simple fun try to console log
+ [1,2,3] === [1,2,3];
+ it will give you false because the both array store different ref values 
+  */
+
+const nums = [1, 2, 3];
+const nums2 = [1, 2, 3];
+console.log("array equlity check using operators ", nums === nums2);
+
+const nums3 = nums;
+console.log(
+  "now see magic when we assign ref value of nums to nums3 ",
+  nums3 === nums
+);
+
+//same case happens in case of variables holding objects they also store ref value of object
+
+const obj1 = {
+  name: "rishi",
+  age: "23",
+};
+
+const obj2 = obj1;
+console.log("object equality obj1 & obj2", obj1 === obj2);
