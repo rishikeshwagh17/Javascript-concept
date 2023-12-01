@@ -89,3 +89,69 @@ function grandDad() {
 }
 
 grandDad();
+
+//function expression in js
+
+//you can assign function to a variable
+//because function in js are objects you can store them like you store object in a variable
+function add(x, y) {
+  return x + y;
+}
+//same is below
+const sum = function (x, y) {
+  return x + y;
+};
+
+console.dir(sum); //see it will represent object
+console.log(sum(3, 4)); // give sum
+
+//higher order functions
+//simply a function which operate on other function
+//accept other function as argument
+//also can return function
+
+//see below
+function callThreeTimes(func) {
+  for (let i = 0; i < 3; i++) {
+    func();
+  }
+}
+
+function latestMeme() {
+  console.log("Moye Moye");
+}
+
+//see now we are passing this meme function as arg to callThreeTimes
+callThreeTimes(latestMeme);
+
+//lets say caseof function return function
+
+function multiplyBy(num) {
+  return function (x) {
+    return x * num;
+  };
+}
+
+//here we will choose by what we need to multiply as num
+
+const triple = multiplyBy(3); //multiply by 3
+console.log(triple(5)); //now get triple of 5
+
+const double = multiplyBy(2);
+console.log(double(5));
+
+//ex check is below 18 - child or adult
+function makeBetweenFunc(min, max) {
+  return function (age) {
+    if (age > min && age < max) {
+      return true;
+    }
+    return false;
+  };
+}
+
+const isChild = makeBetweenFunc(0, 18);
+console.log(isChild(12));
+
+const isAdult = makeBetweenFunc(18, 40);
+console.log(isAdult(22));
