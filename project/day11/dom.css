@@ -1,0 +1,17 @@
+h1{
+    color: orangered;
+    font-size: 60px;
+}
+#fireCrack-Photo{
+    margin-top: 20px;
+    width: 300px;
+}
+.special{
+    color: green;
+    font-size: 20px;
+    border: 1px solid black;
+}
+input[type="password"]{
+    width: 100px;
+    height:60px;
+}
