@@ -81,7 +81,7 @@ fakeRequest("/users")
     console.log(res);
   });
 
-  //wrong api calling
+  //wrong api(url) calling
 //   fakeRequest("/dogs")
 //   .then((res) => {
 //     console.log(res);
